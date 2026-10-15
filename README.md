@@ -1,28 +1,36 @@
-# BNL Studio
+# iPhone website — Midnight & Cyan
 
-An original, responsive phone-concept showcase, created for BNL. Midnight navy, glacier cyan, original CSS-rendered devices, four selectable finishes, three storage configurations, accessible preview dialog, and browser-local saved selections.
+Colour-only customization of the supplied `Apple_Website_Clone-main` React/Vite project for Bnl28.
 
-Live site: https://bnl-studio.vercel.app
+- Live site: https://bnl-studio.vercel.app
+- Repository: https://github.com/Bnl28/bnl-studio
 
-Source: https://github.com/Bnl28/bnl-studio
+## Scope
 
-This is a fictional product design portfolio, not an online store. No purchases, reservations, payments, or personal data are collected. BNL Studio is not affiliated with any phone manufacturer.
+The supplied navigation, hero, video highlights, spacing, copy, and GSAP animations are preserved. The visual changes are limited to midnight navy backgrounds, cyan accents, cool-toned typography, and matching carousel progress colours. Page metadata identifies this as an independent colour study.
 
-## Run locally
+The source folder in Downloads is unchanged. This Desktop copy is the deployable project.
 
-No dependencies or build step are required. From this directory, serve the site with any static HTTP server, for example `npx serve .`. Open the localhost URL printed by the server. Root-relative assets require serving the project root rather than opening the HTML directly.
+## Run
 
-## Deploy
+Requires Node.js 20.19+ or 22.12+.
 
-Import the repository into Vercel using **Other** as the framework, with no build command and the repository root as the output directory. Alternatively, run `vercel --prod` from this directory and complete Vercel's authentication prompts.
+```sh
+npm ci
+npm run dev
+```
 
-## Files
+## Build and deploy
 
-- `index.html`: semantic page sections and concept configurator.
-- `style.css`: responsive design and original device illustrations.
-- `script.js`: configuration selection, preview dialog, navigation, and local saving.
-- `vercel.json`: static hosting configuration and response security headers.
+```sh
+npm run build
+npm run preview
+```
 
-## Originality
+Vercel uses the Vite framework, `npm run build`, and the `dist` output directory, configured in `vercel.json`.
 
-This implementation does not reuse the Apple website clone's source code, Apple branding, supplied product photographs, or third-party assets. All product artwork is drawn with CSS. No external fonts, analytics, runtime packages, or APIs are used.
+## Attribution and rights
+
+This is an adaptation of the project supplied by the owner, not a claim of original authorship of the supplied code or media. The owner confirmed permission to modify and publicly publish the supplied project and images. No upstream license or author information was included in the supplied template README; this adaptation does not grant rights to those materials or remove any included notices. Apple and iPhone names and product media belong to their respective rights holders. This showcase is not affiliated with or endorsed by Apple and does not process purchases.
+
+The original project uses React, Vite, Tailwind CSS, and GSAP.
