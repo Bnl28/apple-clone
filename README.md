@@ -13,9 +13,9 @@ Store opens the internal `/store` concept collection. Mac, iPhone, and Support o
 
 ## Concept Store
 
-The `/store` page takes broad shopping-layout inspiration from category browsing and product-card collections, but uses original copy, CSS device artwork, and layout styling under the requested Apple Clone project name. It prominently identifies itself as an unofficial design demo, not affiliated with Apple. Category filters and product-detail dialogs work without a backend. Direct visits and refreshes are supported by the Vercel rewrite.
+The `/store` page uses original copy and layout styling under the requested Apple Clone project name, with the owner's supplied iPhone 15 Pro photography replacing the initial concept illustrations. A Titanium hero, material and camera close-ups, A17 Pro graphic, and four framed wallpaper studies form the collection. Filters cover Design, Performance, Camera, and Finishes. Wallpaper previews are explicitly distinguished from exterior product photographs.
 
-All illustrated Store products are fictional and not for sale. The Store adds no analytics, cookies, storage, contact forms, checkout, or external artwork requests. Its privacy note explains hosting logs and third-party links instead of claiming that hosting involves no data processing. No claim of legal compliance certification is made.
+The Store prominently identifies itself as an unofficial, non-affiliated demo; nothing is for sale. Category filters and product-detail dialogs work without a backend, and the Vercel rewrite supports direct visits and refreshes. Images are hosted locally; their rights remain with the respective rights holders. The Store adds no analytics, cookies, storage, contact forms, checkout, or external artwork requests. Its privacy note explains hosting logs and third-party links instead of claiming that hosting involves no data processing. No claim of legal compliance certification is made.
 
 "Watch the film" opens the iPhone 15 Pro introduction chapter (54:03) in Apple's official September 12, 2023 event video, since the standalone film is no longer publicly accessible. "Watch the event" opens the full official event. Both are keyboard-accessible links opening YouTube in a new tab; videos are not copied or hosted by this project.
 
