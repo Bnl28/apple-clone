@@ -73,6 +73,7 @@ canvas {
 }
 
 .nav-tab:hover,
+.nav-tab[aria-current="page"],
 .nav-tab:focus-visible,
 .nav-tab:active {
   color: #67e8f9;
