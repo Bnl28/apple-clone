@@ -9,7 +9,7 @@ Colour-only customization of the supplied `Apple_Website_Clone-main` React/Vite 
 
 The supplied hero, video highlights, copy, and GSAP animations are preserved. The palette uses black page backgrounds, cyan accents, cool-toned typography, and matching carousel progress colours.
 
-The navigation has responsive Store, Mac, iPhone, and Support selection buttons with cyan hover, keyboard focus, and active states. iPhone is selected initially. These are visual selections only; they do not open separate product pages or change the supplied page content. All four remain visible on mobile.
+The responsive Store, Mac, iPhone, and Support navigation links open the matching official Apple pages in new tabs, with `noopener noreferrer` protection and accessible new-tab labels. All four remain visible on mobile, with cyan hover, keyboard focus, and pressed states. They do not change the showcase content or imply that this site is an official Apple site.
 
 "Watch the film" opens the iPhone 15 Pro introduction chapter (54:03) in Apple's official September 12, 2023 event video, since the standalone film is no longer publicly accessible. "Watch the event" opens the full official event. Both are keyboard-accessible links opening YouTube in a new tab; videos are not copied or hosted by this project.
 

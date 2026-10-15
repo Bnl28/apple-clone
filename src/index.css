@@ -73,13 +73,14 @@ canvas {
 }
 
 .nav-tab:hover,
-.nav-tab[aria-pressed="true"] {
+.nav-tab:focus-visible,
+.nav-tab:active {
   color: #67e8f9;
   background: #67e8f90d;
   border-color: #67e8f92b;
 }
 
-.nav-tab[aria-pressed="true"]::after {
+.nav-tab:active::after {
   content: "";
   position: absolute;
   bottom: -11px;
@@ -124,7 +125,7 @@ canvas {
     font-size: 12px;
   }
 
-  .nav-tab[aria-pressed="true"]::after {
+  .nav-tab:active::after {
     bottom: -7px;
   }
 }

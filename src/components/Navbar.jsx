@@ -1,25 +1,30 @@
-import { useState } from "react";
 import { appleImg, bagImg, searchImg } from "../utils";
 import { navLists } from "../constants";
 
-const Navbar = () => {
-  const [activeItem, setActiveItem] = useState("iPhone");
+const navigationUrls = {
+  Store: "https://www.apple.com/store",
+  Mac: "https://www.apple.com/mac/",
+  iPhone: "https://www.apple.com/iphone/",
+  Support: "https://support.apple.com/",
+};
 
+const Navbar = () => {
   return (
     <header className="site-header bg-black">
         <nav className="site-nav screen-max-width" aria-label="Main navigation">
           <img src={appleImg} alt="Apple" width={14} height={18} />
           <div className="nav-tabs">
             {navLists.map((item) => (
-              <button
+              <a
                 key={item}
-                type="button"
                 className="nav-tab"
-                aria-pressed={activeItem === item}
-                onClick={() => setActiveItem(item)}
+                href={navigationUrls[item]}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${item} on Apple's official website (opens in a new tab)`}
               >
                 {item}
-              </button>
+              </a>
             ))}
           </div>
           <div className="nav-icons">
