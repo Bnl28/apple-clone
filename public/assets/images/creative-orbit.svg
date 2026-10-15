@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960">
+  <defs>
+    <radialGradient id="background" cx=".7" cy=".2" r=".9">
+      <stop stop-color="#303475"/>
+      <stop offset="1" stop-color="#060916"/>
+    </radialGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#9ee7ff"/>
+      <stop offset=".3" stop-color="#4787ff"/>
+      <stop offset=".65" stop-color="#8d64f5"/>
+      <stop offset="1" stop-color="#e9c7ff"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#273275"/>
+      <stop offset=".5" stop-color="#a6abff"/>
+      <stop offset="1" stop-color="#382052"/>
+    </linearGradient>
+    <filter id="glow" x="-.5" y="-.5" width="2" height="2">
+      <feGaussianBlur stdDeviation="65"/>
+    </filter>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1440v960H0z"/>
+  <ellipse cx="790" cy="510" rx="410" ry="230" fill="#6354d8" opacity=".4" filter="url(#glow)"/>
+  <g fill="none" transform="rotate(-28 720 480)">
+    <ellipse cx="720" cy="480" rx="500" ry="230" stroke="url(#edge)" stroke-width="125"/>
+    <ellipse cx="720" cy="450" rx="500" ry="230" stroke="url(#ribbon)" stroke-width="80"/>
+    <ellipse cx="720" cy="423" rx="500" ry="230" stroke="#e4e9ff" stroke-opacity=".65" stroke-width="2"/>
+    <ellipse cx="720" cy="480" rx="640" ry="342" stroke="#b5beff" stroke-opacity=".15" stroke-width="1"/>
+  </g>
+  <circle cx="1120" cy="180" r="7" fill="#cad6ff"/>
+  <circle cx="260" cy="730" r="4" fill="#b1a2ff"/>
+</svg>

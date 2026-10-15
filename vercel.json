@@ -5,7 +5,9 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/store", "destination": "/" }
+    { "source": "/store", "destination": "/" },
+    { "source": "/mac", "destination": "/" },
+    { "source": "/support", "destination": "/" }
   ],
   "headers": [
     {

@@ -1,13 +1,132 @@
-#carasollDiv {
-  display: inline-flex;
+.feature-player {
+  overflow: hidden;
+  border: 1px solid #9b97d63d;
+  border-radius: 28px;
+  background: #090b12;
+}
+
+.feature-chapters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-bottom: 1px solid #ffffff14;
+}
+
+.feature-chapters button {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
+  gap: 12px;
+  background: transparent;
+  color: #a4a5bb;
+  padding: 23px 20px;
+  text-align: left;
+  font: inherit;
+  font-size: 13px;
+  border: 0;
+  border-right: 1px solid #ffffff14;
+  cursor: pointer;
 }
-#innerDiv {
-  padding: 20px 20px 20px 20px;
+
+.feature-chapters button:last-child {
+  border-right: 0;
 }
-#button {
-  padding: 8px;
-  border-radius: 20px;
+
+.feature-chapters button[aria-pressed="true"] {
+  color: #f5edff;
+  background: linear-gradient(110deg, #20335b, #37244c);
+  box-shadow: inset 0 -2px #a79aff;
+}
+
+.feature-chapters button:hover {
+  color: #fff;
+}
+
+.feature-chapters button:focus-visible {
+  outline-offset: -5px;
+}
+
+.feature-chapter-number {
+  font-size: 9px;
+  color: #b19fe7;
+}
+
+.feature-chapter-arrow {
+  margin-left: auto;
+}
+
+.feature-stage {
+  background: radial-gradient(ellipse at 20% 0, #35265044, transparent 60%), #000;
+}
+
+.feature-stage-heading {
+  padding: 32px 36px 24px;
+}
+
+.feature-stage h3 {
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin: 10px 0;
+}
+
+.feature-stage-heading > p:last-child {
+  font-size: 12px;
+  color: #a5a6bd;
+  line-height: 1.6;
+}
+
+.feature-stage video {
+  display: block;
+  width: 100%;
+  height: clamp(260px, 38vw, 490px);
+  object-fit: contain;
+  background: #000;
+}
+
+.feature-player-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 23px 36px;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #b6abd8;
+  border-top: 1px solid #ffffff14;
+}
+
+.feature-player-footer > span > span {
+  margin-left: 20px;
+  color: #9296ac;
+  letter-spacing: 1px;
+  font-size: 8px;
+}
+
+.feature-player-footer a {
+  color: #c8bcff;
+}
+
+@media (max-width: 640px) {
+  .feature-chapters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-chapters button {
+    padding: 18px 14px;
+    font-size: 12px;
+    gap: 8px;
+    border-bottom: 1px solid #ffffff14;
+  }
+
+  .feature-stage-heading {
+    padding: 26px 22px;
+  }
+
+  .feature-player-footer {
+    padding: 20px 22px;
+    flex-wrap: wrap;
+  }
+
+  .feature-player-footer > span > span {
+    display: block;
+    margin: 5px 0 0;
+  }
 }
