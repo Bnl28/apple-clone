@@ -11,6 +11,8 @@ The supplied hero, video highlights, copy, and GSAP animations are preserved. Th
 
 The navigation has responsive Store, Mac, iPhone, and Support selection buttons with cyan hover, keyboard focus, and active states. iPhone is selected initially. These are visual selections only; they do not open separate product pages or change the supplied page content. All four remain visible on mobile.
 
+"Watch the film" opens the iPhone 15 Pro introduction chapter (54:03) in Apple's official September 12, 2023 event video, since the standalone film is no longer publicly accessible. "Watch the event" opens the full official event. Both are keyboard-accessible links opening YouTube in a new tab; videos are not copied or hosted by this project.
+
 The source folder in Downloads is unchanged. This Desktop copy is the deployable project.
 
 ## Run
