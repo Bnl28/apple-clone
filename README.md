@@ -1,4 +1,4 @@
-# iPhone website — Midnight & Cyan
+# iPhone website — Black & Cyan
 
 Colour-only customization of the supplied `Apple_Website_Clone-main` React/Vite project for Bnl28.
 
@@ -7,7 +7,9 @@ Colour-only customization of the supplied `Apple_Website_Clone-main` React/Vite 
 
 ## Scope
 
-The supplied navigation, hero, video highlights, spacing, copy, and GSAP animations are preserved. The visual changes are limited to midnight navy backgrounds, cyan accents, cool-toned typography, and matching carousel progress colours. Page metadata identifies this as an independent colour study.
+The supplied hero, video highlights, copy, and GSAP animations are preserved. The palette uses black page backgrounds, cyan accents, cool-toned typography, and matching carousel progress colours.
+
+The navigation has responsive Store, Mac, iPhone, and Support selection buttons with cyan hover, keyboard focus, and active states. iPhone is selected initially. These are visual selections only; they do not open separate product pages or change the supplied page content. All four remain visible on mobile.
 
 The source folder in Downloads is unchanged. This Desktop copy is the deployable project.
 

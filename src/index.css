@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-black: #080f1e;
+  --color-black: #000000;
   --color-white: #edfaff;
   --color-blue-400: #67e8f9;
   --color-blue-500: #0891b2;
@@ -38,6 +38,101 @@ canvas {
   margin-inline-end: auto;
   position: relative;
   max-width: 1120px;
+}
+
+.site-header {
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding-inline: 24px;
+  gap: 24px;
+}
+
+.nav-tabs {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: clamp(8px, 4vw, 48px);
+}
+
+.nav-tab {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 9px 16px;
+  background: transparent;
+  color: #a4adb8;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 180ms, background-color 180ms, border-color 180ms;
+}
+
+.nav-tab:hover,
+.nav-tab[aria-pressed="true"] {
+  color: #67e8f9;
+  background: #67e8f90d;
+  border-color: #67e8f92b;
+}
+
+.nav-tab[aria-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 25%;
+  right: 25%;
+  height: 2px;
+  border-radius: 2px;
+  background: #67e8f9;
+}
+
+.nav-tab:focus-visible {
+  outline: 2px solid #67e8f9;
+  outline-offset: 3px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 640px) {
+  .site-nav {
+    flex-wrap: wrap;
+    padding: 16px 20px 12px;
+    gap: 16px;
+  }
+
+  .nav-icons {
+    margin-left: auto;
+  }
+
+  .nav-tabs {
+    order: 1;
+    flex-basis: 100%;
+    gap: 4px;
+    justify-content: space-between;
+  }
+
+  .nav-tab {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  .nav-tab[aria-pressed="true"]::after {
+    bottom: -7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-tab {
+    transition: none;
+  }
 }
 
 @layer utilities {
