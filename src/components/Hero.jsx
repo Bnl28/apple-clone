@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import { useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { heroVideo, smallHeroVideo } from "../utils";
@@ -26,35 +26,39 @@ const Hero = () => {
   }, []);
 
   useGSAP(() => {
-    gsap.to("#hero", { opacity: 1, delay: 2 });
-    gsap.to("#cta", { opacity: 1, delay: 2, y: -50 });
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    gsap.to("#hero", { opacity: 1, duration: reducedMotion ? 0 : 0.8 });
+    gsap.to("#cta", { opacity: 1, duration: reducedMotion ? 0 : 0.8 });
   });
 
   return (
-    <section className="w-full nav-height bg-black relative flex-center flex-col ">
-      <div className="h-5/6 w-full flex-center flex-col gap-7">
-        <p id="hero" className="hero-title ">
+    <section className="upgraded-hero">
+      <div className="hero-stage">
+        <p className="editorial-eyebrow">A COOLER PERSPECTIVE / IPHONE 15 PRO</p>
+        <h1 id="hero" className="hero-title">
           iPhone 15 Pro
-        </p>
-        <div className="md:w-10/12 w-9/12">
-          <video autoPlay loop muted playsInline={true} key={videoSrc}>
+        </h1>
+        <p className="hero-subtitle">Precision in every detail.<br /><span>Reframed in a cooler light.</span></p>
+        <div className="hero-film">
+          <video aria-label="iPhone 15 Pro titanium product film" autoPlay loop muted playsInline={true} key={videoSrc} poster="/assets/images/hero.jpeg" controls>
             <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
       </div>
       <div
         id="cta"
-        className="flex flex-col items-center opacity-0 translate-y-20 gap-4"
+        className="hero-upgraded-actions"
       >
         <a
-          href="#highlights"
-          className=" bg-blue-500 w-20 h-8 text-white text-center  rounded-2xl font-normal text-xl "
+          href="/store"
+          className="upgrade-cta"
         >
-          Buy
+          Explore the Store ↗
         </a>
 
-        <p className="font-normal text-xl">From $199/month or $999</p>
+        <a href="#highlights" className="hero-secondary-link">Watch the highlights ↓</a>
       </div>
+      <p className="hero-demo-note">Unofficial design demo. Not affiliated with Apple. Nothing is for sale.</p>
     </section>
   );
 };

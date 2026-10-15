@@ -7,7 +7,9 @@ Colour-only customization of the supplied `Apple_Website_Clone-main` React/Vite 
 
 ## Scope
 
-The supplied hero, video highlights, copy, and GSAP animations are preserved. The palette uses black page backgrounds, cyan accents, cool-toned typography, and matching carousel progress colours.
+The supplied hero and highlight videos are retained within an upgraded black-and-cyan visual design. The homepage now has a larger editorial hero, camera/material/chip feature cards, and working Store calls to action instead of a pretend purchase button and unverified pricing.
+
+Both pages provide an Image tone control: Cool cyan applies a non-destructive CSS treatment to product images and the homepage hero video; Original removes it. Source assets are unchanged. The treatment is illustrative, not an accurate representation of exterior product colours. This setting lives only in page memory, resets on reload, and is also applied to Store preview dialogs. Navigation icons and video highlights retain their original colours.
 
 Store opens the internal `/store` concept collection. Mac, iPhone, and Support open the matching official Apple pages in new tabs, with `noopener noreferrer` protection and accessible new-tab labels. All four remain visible on mobile, with cyan hover and keyboard focus states.
 
